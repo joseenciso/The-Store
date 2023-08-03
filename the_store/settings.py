@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-flmj1$lu=w#cu^8-04=0k4c+z3tez*3)gfkbsmd5#4sfbg89#v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'home'
 ]
 
 MIDDLEWARE = [
@@ -67,7 +68,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'the_store.wsgi.application'
+#WSGI_APPLICATION = 'the_store.wsgi.application'
+WSGI_APPLICATION = 'the_store.wsgi.app'
 
 
 # Database
